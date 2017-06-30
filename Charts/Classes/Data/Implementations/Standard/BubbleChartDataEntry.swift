@@ -36,7 +36,7 @@ open class BubbleChartDataEntry: ChartDataEntry
     /// - parameter val: The value on the y-axis.
     /// - parameter size: The size of the bubble.
     /// - parameter data: Spot for additional data this Entry represents.
-    public init(xIndex: Int, value: Double, size: CGFloat, data: AnyObject?)
+    public init(xIndex: Int, value: Double, size: CGFloat, data: CustomMarker?)
     {
         super.init(value: value, xIndex: xIndex, data: data)
       

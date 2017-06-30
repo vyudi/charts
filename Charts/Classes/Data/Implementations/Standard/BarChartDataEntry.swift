@@ -45,14 +45,14 @@ open class BarChartDataEntry: ChartDataEntry
     
     
     /// Constructor for stacked bar entries.
-    public init(values: [Double], xIndex: Int, label: AnyObject)
+    public init(values: [Double], xIndex: Int, label: CustomMarker)
     {
         super.init(value: BarChartDataEntry.calcSum(values), xIndex: xIndex, data: label)
         self.values = values
     }
     
     /// Constructor for normal bars (not stacked).
-    public override init(value: Double, xIndex: Int, data: AnyObject?)
+    public override init(value: Double, xIndex: Int, data: CustomMarker?)
     {
         super.init(value: value, xIndex: xIndex, data: data)
     }

@@ -27,7 +27,7 @@ open class ChartDataEntry: NSObject
     //open var data: AnyObject?
     
     /// optional spot for additional data this Entry represents
-    var data: CustomMarker?
+    open var data: CustomMarker?
     
     public override required init()
     {
@@ -42,13 +42,13 @@ open class ChartDataEntry: NSObject
         self.xIndex = xIndex
     }
     
-    public init(value: Double, xIndex: Int, data: AnyObject?)
+    public init(value: Double, xIndex: Int, data: CustomMarker?)
     {
         super.init()
         
         self.value = value
         self.xIndex = xIndex
-        self.data = data as! CustomMarker
+        self.data = data
     }
     
     

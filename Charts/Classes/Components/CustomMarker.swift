@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CustomMarker: NSObject {
+open class CustomMarker: NSObject {
     
     var isDashedLine: Bool = false;
     

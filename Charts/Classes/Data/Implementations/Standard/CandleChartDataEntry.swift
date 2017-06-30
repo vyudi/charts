@@ -42,7 +42,7 @@ open class CandleChartDataEntry: ChartDataEntry
         self.close = close
     }
     
-    public init(xIndex: Int, shadowH: Double, shadowL: Double, open: Double, close: Double, data: AnyObject?)
+    public init(xIndex: Int, shadowH: Double, shadowL: Double, open: Double, close: Double, data: CustomMarker?)
     {
         super.init(value: (shadowH + shadowL) / 2.0, xIndex: xIndex, data: data)
         
